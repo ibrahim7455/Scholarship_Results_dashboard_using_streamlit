@@ -39,7 +39,6 @@ result_colors = {'Accepted': '#2ecc71', 'pending': '#f39c12', 'drop out': '#e74c
 
 # SIDEBAR
 with st.sidebar:
-    st.image("https://via.placeholder.com/150x50?text=EDU+Analytics", width=150)
     st.title("Filter Options")
 
     result_filter = st.multiselect("Outcome Status", options=df['Result'].unique(), default=df['Result'].unique())
