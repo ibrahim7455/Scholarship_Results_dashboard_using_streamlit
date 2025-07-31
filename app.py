@@ -161,16 +161,7 @@ with tab3:
             )
             st.plotly_chart(fig, use_container_width=True)
 
-    with col2:
-        if 'sub_major' in filtered_df.columns:
-            fig = px.histogram(
-                filtered_df, x='sub_major',
-                color='Result', barmode='group',
-                color_discrete_map=result_colors,
-                title='<b>Outcomes by Major/Program</b>'
-            )
-            fig.update_xaxes(categoryorder='total descending')
-            st.plotly_chart(fig, use_container_width=True)
+   
 
 with tab4:
     st.header("Student Risk Analysis")
