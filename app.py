@@ -141,7 +141,7 @@ with tab2:
 
 with tab3:
     st.header("Student Demographic Analysis")
-    col1 = st.columns(1)
+    col1, col2 = st.columns(2)
 
     with col1:
         fig = px.histogram(
