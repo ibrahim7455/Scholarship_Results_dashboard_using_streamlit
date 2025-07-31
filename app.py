@@ -19,7 +19,7 @@ st.set_page_config(
 # Load Data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('C:\\Users\\Test\\Desktop\\projects\\files\\python\\scholarship success and drop out\\processed_student_data.csv')
+    data = pd.read_csv('processed_student_data.csv')
 
     # Feature Engineering
     data['total_score'] = data[['IQ_test_score', 'English_test_score', 
